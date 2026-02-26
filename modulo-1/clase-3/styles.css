@@ -1,0 +1,77 @@
+body{    
+    background: #030202;
+    background: linear-gradient(137deg, rgba(3, 2, 2, 1) 0%, rgba(14, 11, 15, 1) 38%, rgba(78, 61, 89, 1) 100%);
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    gap: 1rem;
+    margin-top: 10px;
+    color: aliceblue;
+    margin-inline: auto;
+}
+
+main{
+    background: #670f96;
+    background: linear-gradient(137deg, rgba(103, 15, 150, 1) 0%, rgba(199, 137, 214, 1) 100%);
+
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 24px 19px 9px 1px rgba(240,56,56,1);
+    -webkit-box-shadow: 24px 19px 9px 1px rgba(240,56,56,1);
+    -moz-box-shadow: 24px 19px 9px 1px rgba(240,56,56,1);
+    margin-bottom: 3%;
+    padding-top: 3%;
+    margin-top: 2%;
+}
+
+#mayorEdad{
+    padding-top: 3%;
+    margin-bottom: 1%;
+}
+
+h1, h2, h3{
+    margin: unset;
+    margin-bottom: 15px;
+    font-family: "Ranchers", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+
+input, select{
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 8px;
+    border: 2px solid #affa00;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+button {
+    background-color: #affa00;
+    border-radius: 10px;
+    padding-inline: 10px;
+    padding-block: 8px;
+    transition: background-color 0.3s, color 0,3 aliceblue;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+}
+
+button:hover {
+  background-color: #1b9e1b; 
+  cursor: pointer;
+  color: aliceblue; 
+}
+
