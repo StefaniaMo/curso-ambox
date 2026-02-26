@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+    <h1>Deep House Night</h1>
+    <h2>Compra YA tu entrada!</h2>
+    <h3>Sábado 07 de Marzo 2026 - 22:00 hrs.</h3>
+    <form>
+        <label for="nombre">Nombre*</label> 
+            <input type="text" minlength="3" name="nombre" id="nombre" placeholder="Ingrese su nombre" required> 
+        <label for="apellido">Apellido*</label> 
+            <input type="text" minlength="3" name="apellido" id="apellido" placeholder="Ingrese su apellido" required> 
+        <label for="email">Email*</label> 
+            <input type="email" minlength="3" name="email" id="email" placeholder="Ingrese su email" required>  
+        <label for="telefono">Telefono*</label> 
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono" min="10"> 
+        
+        <label for="tipoEntrada">Tipo de entrada</label>
+        <select name="tipoEntrada" id="tipoEntrada">
+            <option selected></option>
+            <option>General</option>
+            <option>VIP</option>
+            <option>Meet and Green</option>
+        </select> 
+            
+        <label for="cantidad" >Cantidad de entradas</label>
+            <input type="number" name="cantidad" required>
+        <label for="mayorEdad">Eres mayor de edad? +18</label>
+        <input type="radio" name="mayorEdad">
+        <button type="submit">Proceder con el pago</button>
+    </form>
+</main>
+
+</body>
+</html>
