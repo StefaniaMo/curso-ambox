@@ -1,0 +1,40 @@
+.nav-libreria {
+    background-color: #a3dadf !important; 
+}
+
+.nav-libreria .nav-link {
+    color: white !important;
+}
+
+.nav-libreria .nav-link:hover {
+    color: #397979 !important;
+}
+.card {
+   
+    margin-inline: auto;
+    max-width: 400px;   
+    width: 100%;
+    transition: transform 0.3s ease;
+
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-img-top {
+    height: 60%; 
+    object-fit: cover;
+    height: 400px;
+}
+
+footer{
+    background-color:#a3dadf;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    
+    p{
+        font-size: 18px;
+        margin-bottom: unset;
+    }
+}
