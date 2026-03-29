@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+   
+    <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Portfolio Stefania Molina</title>
+     <!-- css -->
+    <link rel="stylesheet" href="/modulo-1/clase-8y9/portfolio/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nav-libreria shadow-sm px-3">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <h1 class="text-white">Portafolio</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#heroSection">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#proyectsSection">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#aboutMeSection">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contactSection">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero section -->
+    <main>
+        <section id="heroSection" class="py-5 text-center">
+            <div class="container">
+            <h2>¡Hola! Soy Stefania Molina.</h2>
+            <p class="py-4">Desarrolladora Front-end en formación enfocada en crear experiencias web interactivas y funcionales para la comodidad del usuario.</p>
+            <!-- Botones -->
+            <div class="d-grid gap-2 d-md-flex justify-content-center "> 
+                <a href="#proyectsSection" class="btn btn-primary btn-lg">Proyectos</a>
+                <a href="#contactSection" class="btn btn-primary btn-lg">Contacto</a>
+            </div>
+           </div>
+        </section>
+<!-- Proyects Section -->
+        <section id="proyectsSection" class="container my-5 text-center text-md-start">
+            <h2 class="mb-4">Mis proyectos</h2>
+            
+            <div class="row g-4 justify-content-center justify-content-md-start"> 
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contenedor-tarjeta card h-100 shadow-sm border-0">
+                        <div class="contenedor-img">
+                            <img src="/modulo-1/clase-8y9/portfolio/img/LanitasScreen.png" class="card-img-top" alt="Lanitas Kiki">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Lanitas Kiki</h5>
+                            <p class="card-text">Una web de venta de lanas.</p>
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contenedor-tarjeta card h-100 shadow-sm border-0">
+                        <div class="contenedor-img">
+                            <img src="/modulo-1/clase-8y9/portfolio/img/RopaScreen.png" class="card-img-top" alt="Remeras 67">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">Remeras 67</h5>
+                            <p class="card-text">Una web de venta de ropa.</p>
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="contenedor-tarjeta card h-100 shadow-sm border-0">
+                        <div class="contenedor-img">
+                             <img src="/modulo-1/clase-8y9/portfolio/img/ReminaScreen.png" class="card-img-top" alt="Libros">
+                        </div>
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Libros</h5>
+                            <p class="card-text">Una web de venta de libros.</p>
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!-- Sobre mi -->
+        <section id="aboutMeSection" class="py-5 bg-custom-light">
+            <div class="container">
+                
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <h2 class="text-center text-md-start mb-4">Sobre mi</h3>
+                        <h4>Hola!</h4>
+                             <p>Soy una apasionada del aprendizaje continuo y la resolución de problemas a través del código y en la vida misma. Actualmente, estoy cursando un programa intensivo de Full Stack donde fortalezco mis habilidades en HTML, CSS, JavaScript y React. Me motiva construir interfaces que no solo se vean bien, sino que sean intuitivas para el usuario. Cuando no estoy programando, me gusta tejer y cocinar cosas ricas para mi familia.</p>
+                    </div>
+                
+                
+                    <div class="col-12 col-md-4 text-center">
+                        <img src="/modulo-1/clase-8y9/portfolio/img/AsuPortafolio.png" class="img-fluid rounded-circle" alt="Stefanía Molina">
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="contactSection" class="container my-5">
+    <h2 class="text-center  mb-4">Contacto</h2>
+    <div class="row justify-content-center" >
+        <div class="col-12 col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Tu nombre</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tu Email</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Tu Mensaje</label>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <button class="btn btn-primary w-100">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer>
+       <p>© 2026 Diseñado y desarrollado por Stefania Molina.</p>
+        
+    </footer>
+</body>
+
+</html>

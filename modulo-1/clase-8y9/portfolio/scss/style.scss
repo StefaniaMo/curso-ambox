@@ -1,0 +1,155 @@
+$primary: rgb(201, 96, 154);
+$primary-dark: rgb(163, 27, 102);
+$bg-light: rgb(253, 242, 246); 
+:root {
+  --bs-primary: #c9609a; /* Tu color principal en hex o rgb */
+  
+  /* CRÍTICO: Bootstrap usa esto para opacidades. 
+     Deben ser solo los números del RGB de tu color primary */
+  --bs-primary-rgb: 201, 96, 154; 
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  
+  /* Variables para el hover que ya tenías */
+  
+  
+  
+  /* Agregamos el color del texto para que siempre sea blanco */
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  &:hover {
+        --bs-btn-hover-bg: #{$primary-dark}; // Usamos la variable Sass
+        --bs-btn-hover-border-color: #{$primary-dark};
+        
+        // 2. Pequeña elevación (hacia arriba 3px)
+        transform: translateY(-3px); 
+        
+        // 3. Sombra suave para dar profundidad
+        box-shadow: 0 5px 15px rgba(163, 27, 102, 0.4); 
+    }
+}
+
+.bg-custom-light {
+    background-color: $bg-light;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Lexend", sans-serif;
+}
+
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: $primary;
+}
+
+nav ul {
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none !important;
+  color: white !important;
+  transition: color 0.3s ease;
+  &:hover{
+    color: $primary-dark !important; 
+    text-decoration: none !important; 
+    
+  }
+}
+
+
+
+#heroSection {
+   
+     .btn-primary {
+        padding: 7px 100px; 
+        border-radius: 8px;  
+        font-weight: 400;
+        transition: all 0.3s ease;
+        width: 100%; 
+        max-width: 300px; 
+
+        margin-inline: auto;
+    }
+
+
+      #heroSection .btn-primary a {
+          color: white;
+          text-decoration: none;
+      }
+}
+
+@media (min-width: 768px) {
+  #heroSection .btn-primary {
+    margin-inline: 0; /* Esto los alinea a la izquierda en escritorio */
+  }
+}
+
+.contenedor-tarjeta{
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  /* Sombra inicial suave o nula */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+  &:hover{
+    box-shadow: 10px 10px 20px 5px rgba(184, 179, 181, 0.7)!important; 
+    transform: translateY(-5px); /* Opcional: eleva la tarjeta */
+  }
+}
+
+/* Alineación de imágenes en tarjetas */
+.contenedor-img{
+  overflow: hidden; /* ¡Esta es la clave! Corta lo que sobresalga */
+    border-top-left-radius: 0.375rem; /* Mantiene las esquinas redondeadas de la tarjeta */
+    border-top-right-radius: 0.375rem;
+}
+.card-img-top {
+    
+   height: 250px; 
+   object-fit: cover; 
+   object-position: center; 
+   transition: transform 0.3s ease;
+   display: block;
+   &:hover{
+    transform:scale(1.1)
+   }
+}
+
+#contactSection form {
+    
+    gap: 10px;
+    width: 100%;
+    
+}
+
+footer {
+    background-color: $primary;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0 0 0;
+    p{
+        margin: 0;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
