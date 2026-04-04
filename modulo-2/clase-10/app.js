@@ -8,15 +8,18 @@ let tieneTrabajo = false;
 // 3- Mostrar e consola si tiene trabajo 
 // 4- Mostrar un mensaje en consola si tiene trabajo y es mayor de edad (Algo asi como "Puede trabajar" o "Esta trabajando")
 
-if (edad >= 18 && tieneTrabajo == false) {
-    console.log("El/la estimado/a Sr./Sra "+nombre+" proveniente de "+pais+", es mayor de edad y no tiene trabajo pero puede trabajar");
+if (edad >= 18 ) {
     
-}else if(edad >= 18 && tieneTrabajo == true){
-    console.log("El/la estimado/a Sr./Sra "+nombre+" proveniente de "+pais+", es mayor de edad y tiene trabajo.");
-}else if(edad < 18 && tieneTrabajo == false){
-    console.log("El/la estimado/a Sr./Sra Sr./Sra "+nombre+" proveniente de "+pais+", es menor de edad y no tiene trabajo pero no debería trabajar");
-}else{
-    console.log("El/la estimado/a Sr./Sra Sr./Sra"+nombre+" proveniente de "+pais+", es menor de edad y no debería trabajar");
+    if (tieneTrabajo == true) {
+        console.log("El/la estimado/a Sr./Sra "+nombre+" proveniente de "+pais+", es mayor de edad y tiene trabajo");
+    }else{
+        console.log("El/la estimado/a Sr./Sra "+nombre+" proveniente de "+pais+", es mayor de edad y no tiene trabajo pero puede trabajar");
+    }
+
+} else {
+   if (tieneTrabajo == true) {
+        console.log("El/la estimado/a Sr./Sra Sr./Sra"+nombre+" proveniente de "+pais+", es menor de edad y tiene trabajo pero no debería trabajar");
+   }else{
+        console.log("El/la estimado/a Sr./Sra Sr./Sra "+nombre+" proveniente de "+pais+", es menor de edad y no tiene trabajo pero no debería trabajar");
+   }
 }
-
-
